@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Soso Socketio Toolbox</title>
+		<!-- This file does not exist on disk. It's dynamically served by Node -->
+		<script src="/socket.io/socket.io.js"></script>
+		<style>
+			#canv {
+				background-color: rgb(200,200,200);
+				margin: 0 auto ;
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="canv" width="640" height="480"></canvas>
+		<script>
+			var canvas = document.getElementById("canv");
+			var ctx = canvas.getContext("2d");
+
+			var socket = io();
+
+			// set up socketio event listeners
+			socket.on("mouse up", function(){
+				console.log("received mouse up event");
+				ctx.clearRect(0,0,canvas.width,canvas.height);
+			});
+
+			socket.on("mouse down", function(coords){
+				console.log("received mouse down event: %f,%f", coords.pos[0], coords.pos[1]);
+
+				ctx.save();
+
+				var x = coords.pos[0] * canvas.width;
+				var y = coords.pos[1] * canvas.height;
+				ctx.translate(x,y);
+				ctx.rotate(45 * Math.PI / 180);
+
+				ctx.fillStyle = "#FF0000";
+				ctx.fillRect(-20,-2,40,4);
+				ctx.fillRect(-2,-20,4,40);
+
+				ctx.restore();
+			});
+
+			// tell socketio server where we click
+			canvas.onmousedown = function(event){
+				var x = event.clientX - canvas.offsetLeft;
+				var y = event.clientY - canvas.offsetTop;
+
+				socket.emit("mouse down", { "pos": [x/canvas.width, y/canvas.height] });
+			};
+
+			canvas.onmouseup = function(event){
+				socket.emit("mouse up");
+			};
+		</script>
+	</body>
+</html>

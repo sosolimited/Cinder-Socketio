@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D720219952D00008149E2 /* AVFoundation.framework */; };
+		006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D720319952D00008149E2 /* CoreMedia.framework */; };
+		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784AF0FF439BC000DE1D7 /* Accelerate.framework */; };
+		00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */; };
+		00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B10FF439BC000DE1D7 /* AudioUnit.framework */; };
+		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
+		00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995581B128DF400A5C623 /* IOKit.framework */; };
+		00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995591B128DF400A5C623 /* IOSurface.framework */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		72685044DFDA4C38AE7B6D94 /* sio_packet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4528209A3E904AE882BD1550 /* sio_packet.cpp */; };
+		6F465D54EEB04587B71D7705 /* sio_client_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AD3F6080AEA44258C40810A /* sio_client_impl.cpp */; };
+		AC4F15662C3C4FD38086EDB9 /* sio_packet.h in Headers */ = {isa = PBXBuildFile; fileRef = B4417ED081A044078A954F00 /* sio_packet.h */; };
+		78B4A66A8AE64328BB6F7605 /* sio_client_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E5E845ECC21432C844A08C4 /* sio_client_impl.h */; };
+		A13F77E9297D48C59BB5EBA4 /* sio_socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29DD02A0699E4341AFA3F892 /* sio_socket.cpp */; };
+		AAA486BD9D5E48BDB9EFBD25 /* sio_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DA684C0CB0A4043A9DFCFD2 /* sio_client.cpp */; };
+		60FB30E770FE443498CC8584 /* sio_socket.h in Headers */ = {isa = PBXBuildFile; fileRef = DF0677212FC24C288DE3AE8B /* sio_socket.h */; };
+		D4B0583962DA45669E414776 /* sio_message.h in Headers */ = {isa = PBXBuildFile; fileRef = C97FF4DAFB664BE1969F5019 /* sio_message.h */; };
+		46AA8F4934254E6783916057 /* sio_client.h in Headers */ = {isa = PBXBuildFile; fileRef = BE853E38D9624D8D9E9C58B8 /* sio_client.h */; };
+		BA14A18FD25943868AAE6947 /* CinderClient_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BFBC7CEF3FC84A7282D918A8 /* CinderClient_Prefix.pch */; };
+		F0F856EFD37D4D40B05DA299 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6649D8A72E5F455E8BF888E2 /* CinderApp.icns */; };
+		C3503D9440EA4567B1715B77 /* Resources.h in Headers */ = {isa = PBXBuildFile; fileRef = AC58653B35DA4DB5A334AF41 /* Resources.h */; };
+		F86530B088604581925D113A /* CinderClientApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC3B293E34466593257110 /* CinderClientApp.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		006D720219952D00008149E2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		006D720319952D00008149E2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		00B784AF0FF439BC000DE1D7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		00B995581B128DF400A5C623 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		00B995591B128DF400A5C623 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		8D1107320486CEB800E47090 /* CinderClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinderClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BDC3B293E34466593257110 /* CinderClientApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../src/CinderClientApp.cpp; sourceTree = "<group>"; name = CinderClientApp.cpp; };
+		AC58653B35DA4DB5A334AF41 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../include/Resources.h; sourceTree = "<group>"; name = Resources.h; };
+		6649D8A72E5F455E8BF888E2 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; name = CinderApp.icns; };
+		058A3BD60B214E8A85F9098F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; name = Info.plist; };
+		BFBC7CEF3FC84A7282D918A8 /* CinderClient_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = CinderClient_Prefix.pch; sourceTree = "<group>"; name = CinderClient_Prefix.pch; };
+		BE853E38D9624D8D9E9C58B8 /* sio_client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../../src/socket.io-client-cpp/src/sio_client.h"; sourceTree = "<group>"; name = sio_client.h; };
+		C97FF4DAFB664BE1969F5019 /* sio_message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../../src/socket.io-client-cpp/src/sio_message.h"; sourceTree = "<group>"; name = sio_message.h; };
+		DF0677212FC24C288DE3AE8B /* sio_socket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../../src/socket.io-client-cpp/src/sio_socket.h"; sourceTree = "<group>"; name = sio_socket.h; };
+		0DA684C0CB0A4043A9DFCFD2 /* sio_client.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../../src/socket.io-client-cpp/src/sio_client.cpp"; sourceTree = "<group>"; name = sio_client.cpp; };
+		29DD02A0699E4341AFA3F892 /* sio_socket.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../../src/socket.io-client-cpp/src/sio_socket.cpp"; sourceTree = "<group>"; name = sio_socket.cpp; };
+		8E5E845ECC21432C844A08C4 /* sio_client_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../../src/socket.io-client-cpp/src/internal/sio_client_impl.h"; sourceTree = "<group>"; name = sio_client_impl.h; };
+		B4417ED081A044078A954F00 /* sio_packet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../../src/socket.io-client-cpp/src/internal/sio_packet.h"; sourceTree = "<group>"; name = sio_packet.h; };
+		3AD3F6080AEA44258C40810A /* sio_client_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../../src/socket.io-client-cpp/src/internal/sio_client_impl.cpp"; sourceTree = "<group>"; name = sio_client_impl.cpp; };
+		4528209A3E904AE882BD1550 /* sio_packet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../../src/socket.io-client-cpp/src/internal/sio_packet.cpp"; sourceTree = "<group>"; name = sio_packet.cpp; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */,
+				006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
+				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
+				00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */,
+				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
+				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
+				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
+				00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */,
+				00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2BDC3B293E34466593257110 /* CinderClientApp.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				006D720219952D00008149E2 /* AVFoundation.framework */,
+				006D720319952D00008149E2 /* CoreMedia.framework */,
+				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
+				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
+				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
+				00B784B20FF439BC000DE1D7 /* CoreAudio.framework */,
+				5323E6B10EAFCA74003A9687 /* CoreVideo.framework */,
+				0091D8F80E81B9330029341E /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				00B995581B128DF400A5C623 /* IOKit.framework */,
+				00B995591B128DF400A5C623 /* IOSurface.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* CinderClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CinderClient */ = {
+			isa = PBXGroup;
+			children = (
+				01B97315FEAEA392516A2CEA /* Blocks */,
+				29B97315FDCFA39411CA2CEA /* Headers */,
+				080E96DDFE201D6D7F000001 /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CinderClient;
+			sourceTree = "<group>";
+		};
+		360B1D0F58664B5894D97528 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				8E5E845ECC21432C844A08C4 /* sio_client_impl.h */,
+				B4417ED081A044078A954F00 /* sio_packet.h */,
+				3AD3F6080AEA44258C40810A /* sio_client_impl.cpp */,
+				4528209A3E904AE882BD1550 /* sio_packet.cpp */,
+			);
+			name = internal;
+			sourceTree = "<group>";
+		};
+		2BEA20D70EB24F7DB0596318 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BE853E38D9624D8D9E9C58B8 /* sio_client.h */,
+				C97FF4DAFB664BE1969F5019 /* sio_message.h */,
+				DF0677212FC24C288DE3AE8B /* sio_socket.h */,
+				0DA684C0CB0A4043A9DFCFD2 /* sio_client.cpp */,
+				29DD02A0699E4341AFA3F892 /* sio_socket.cpp */,
+				360B1D0F58664B5894D97528 /* internal */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		51F735CA67614ED49C707DB0 /* socket.io-client-cpp */ = {
+			isa = PBXGroup;
+			children = (
+				2BEA20D70EB24F7DB0596318 /* src */,
+			);
+			name = "socket.io-client-cpp";
+			sourceTree = "<group>";
+		};
+		2768167A248B4F51B1012CEA /* src */ = {
+			isa = PBXGroup;
+			children = (
+				51F735CA67614ED49C707DB0 /* socket.io-client-cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		0405F256BB7E48B7AF4C2660 /* Socket.io Client */ = {
+			isa = PBXGroup;
+			children = (
+				2768167A248B4F51B1012CEA /* src */,
+			);
+			name = "Socket.io Client";
+			sourceTree = "<group>";
+		};
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				0405F256BB7E48B7AF4C2660 /* Socket.io Client */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				AC58653B35DA4DB5A334AF41 /* Resources.h */,
+				BFBC7CEF3FC84A7282D918A8 /* CinderClient_Prefix.pch */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6649D8A72E5F455E8BF888E2 /* CinderApp.icns */,
+				058A3BD60B214E8A85F9098F /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* CinderClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "CinderClient" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CinderClient;
+			productInstallPath = "$(HOME)/Applications";
+			productName = CinderClient;
+			productReference = 8D1107320486CEB800E47090 /* CinderClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CinderClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CinderClient */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* CinderClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0F856EFD37D4D40B05DA299 /* CinderApp.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F86530B088604581925D113A /* CinderClientApp.cpp in Sources */,
+				AAA486BD9D5E48BDB9EFBD25 /* sio_client.cpp in Sources */,
+				A13F77E9297D48C59BB5EBA4 /* sio_socket.cpp in Sources */,
+				6F465D54EEB04587B71D7705 /* sio_client_impl.cpp in Sources */,
+				72685044DFDA4C38AE7B6D94 /* sio_packet.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CinderClient_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder_d.a\"";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = CinderClient;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CinderClient_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder.a\"";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = CinderClient;
+				STRIP_INSTALLED_PRODUCT = YES;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = "../../../../../..";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				ENABLE_TESTABILITY = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/include\"",
+					"\"../../../../src/socket.io-client-cpp/lib/rapidjson/include\"",
+					"\"../../../../src/socket.io-client-cpp/lib/websocketpp\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = "../../../../../..";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/include\"",
+					"\"../../../../src/socket.io-client-cpp/lib/rapidjson/include\"",
+					"\"../../../../src/socket.io-client-cpp/lib/websocketpp\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "CinderClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CinderClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
