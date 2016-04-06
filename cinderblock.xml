@@ -5,7 +5,7 @@
 	id			= "com.sosolimited.socketio-block"
 	author	= "Wes Thomas"
 	summary	= "CinderBlock for the Socket.io C++ client."
-	license	= "BSD"
+	license	= "MIT"
 	>
 	<!-- socketio dependencies -->
 	<includePath system="true">src/socket.io-client-cpp/lib/rapidjson/include/</includePath>
